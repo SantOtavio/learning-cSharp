@@ -1,0 +1,13 @@
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\obj\Debug\netcoreapp3.1\tutorialcsharp.csprojAssemblyReference.cache
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\obj\Debug\netcoreapp3.1\tutorialcsharp.AssemblyInfoInputs.cache
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\obj\Debug\netcoreapp3.1\tutorialcsharp.AssemblyInfo.cs
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\obj\Debug\netcoreapp3.1\tutorialcsharp.csproj.CoreCompileInputs.cache
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\obj\Debug\netcoreapp3.1\tutorialcsharp.dll
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\obj\Debug\netcoreapp3.1\tutorialcsharp.pdb
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\bin\Debug\netcoreapp3.1\tutorialcsharp.exe
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\bin\Debug\netcoreapp3.1\tutorialcsharp.deps.json
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\bin\Debug\netcoreapp3.1\tutorialcsharp.runtimeconfig.json
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\bin\Debug\netcoreapp3.1\tutorialcsharp.runtimeconfig.dev.json
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\bin\Debug\netcoreapp3.1\tutorialcsharp.dll
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\bin\Debug\netcoreapp3.1\tutorialcsharp.pdb
+C:\Users\otavio_a_santos\source\repos\tutorialcsharp\tutorialcsharp\obj\Debug\netcoreapp3.1\tutorialcsharp.genruntimeconfig.cache

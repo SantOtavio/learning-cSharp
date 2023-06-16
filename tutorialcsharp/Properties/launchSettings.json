@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "tutorialcsharp": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
