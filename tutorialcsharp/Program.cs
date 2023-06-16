@@ -12,36 +12,32 @@ namespace tutorialcsharp
         static void ex1()
         {
             Console.WriteLine("Digite a quantidade mínima de peças: ");
-            int quantidadeMinima = int.Parse(Console.ReadLine());
+            int qtdMin = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite a quantidade máxima peças: ");
-            int quantidadeMaxima = int.Parse(Console.ReadLine());
-            int estoqueMedio = (quantidadeMinima + quantidadeMaxima) / 2;
-            Console.WriteLine("O estoque médio de peças é: " + estoqueMedio);
+            int qtdMax = int.Parse(Console.ReadLine());
+            int estoque = (qtdMin + qtdMax) / 2;
+            Console.WriteLine("O estoque médio de peças é: " + estoque);
         }
 
         static void ex2()
         {
             Console.WriteLine("\nDigite a cotação do dólar: ");
-            double cotacaoDolar = double.Parse(System.Console.ReadLine());
+            double dolae = double.Parse(System.Console.ReadLine());
             Console.WriteLine("Digite o valor em dólares: ");
-            double valorDolar = double.Parse(System.Console.ReadLine());
-            double valorReal = cotacaoDolar * valorDolar;
-            Console.WriteLine("O valor em reais é: R$" + valorReal);
+            double valor = double.Parse(System.Console.ReadLine());
+            double reais = dolae * valor;
+            Console.WriteLine("O valor em reais é: R$" + reais);
         }
 
         static void ex3()
         {
-            Console.WriteLine("\nDigite o código do vendedor: ");
-            int codigoVendedor = int.Parse(System.Console.ReadLine());
-            Console.WriteLine("Digite o código da peça: ");
-            int codigoPeca = int.Parse(System.Console.ReadLine());
             Console.WriteLine("Digite o preço unitário da peça: ");
-            double precoUnitario = double.Parse(System.Console.ReadLine());
+            double preco = double.Parse(System.Console.ReadLine());
             Console.WriteLine("Digite a quantidade vendida: ");
-            int quantidadeVendida = int.Parse(System.Console.ReadLine());
-            double valorTotal = precoUnitario * quantidadeVendida;
-            double comissao = valorTotal * 0.05;
-            Console.WriteLine("O valor total da venda é: R$" + valorTotal);
+            int qtd = int.Parse(System.Console.ReadLine());
+            double valor = preco * qtd;
+            double comissao = valor * 0.05;
+            Console.WriteLine("O valor total da venda é: R$" + valor);
             Console.WriteLine("O valor da comissão é: R$" + comissao);
         }
 
@@ -59,19 +55,19 @@ namespace tutorialcsharp
             Console.WriteLine("Digite o quarto valor: ");
             int valor4 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("A soma de " + valor1 + " com " + valor2 + " é: " + (valor1 + valor2));
-            Console.WriteLine("A soma de " + valor1 + " com " + valor3 + " é: " + (valor1 + valor3));
-            Console.WriteLine("A soma de " + valor1 + " com " + valor4 + " é: " + (valor1 + valor4));
-            Console.WriteLine("A soma de " + valor2 + " com " + valor3 + " é: " + (valor2 + valor3));
-            Console.WriteLine("A soma de " + valor2 + " com " + valor4 + " é: " + (valor2 + valor4));
-            Console.WriteLine("A soma de " + valor3 + " com " + valor4 + " é: " + (valor3 + valor4));
+            Console.WriteLine("A sm de " + valor1 + " com " + valor2 + " = " + (valor1 + valor2));
+            Console.WriteLine("A sm de " + valor1 + " com " + valor3 + " = " + (valor1 + valor3));
+            Console.WriteLine("A sm de " + valor1 + " com " + valor4 + " = " + (valor1 + valor4));
+            Console.WriteLine("A sm de " + valor2 + " com " + valor3 + " = " + (valor2 + valor3));
+            Console.WriteLine("A sm de " + valor2 + " com " + valor4 + " = " + (valor2 + valor4));
+            Console.WriteLine("A sm de " + valor3 + " com " + valor4 + " = " + (valor3 + valor4));
             
-            Console.WriteLine("A multiplicação de " + valor1 + " com " + valor2 + " é: " + (valor1 * valor2));
-            Console.WriteLine("A multiplicação de " + valor1 + " com " + valor3 + " é: " + (valor1 * valor3));
-            Console.WriteLine("A multiplicação de " + valor1 + " com " + valor4 + " é: " + (valor1 * valor4));
-            Console.WriteLine("A multiplicação de " + valor2 + " com " + valor3 + " é: " + (valor2 * valor3));
-            Console.WriteLine("A multiplicação de " + valor2 + " com " + valor4 + " é: " + (valor2 * valor4));
-            Console.WriteLine("A multiplicação de " + valor3 + " com " + valor4 + " é: " + (valor3 * valor4));
+            Console.WriteLine("A multi de " + valor1 + " com " + valor2 + " = " + (valor1 * valor2));
+            Console.WriteLine("A multi de " + valor1 + " com " + valor3 + " = " + (valor1 * valor3));
+            Console.WriteLine("A multi de " + valor1 + " com " + valor4 + " = " + (valor1 * valor4));
+            Console.WriteLine("A multi de " + valor2 + " com " + valor3 + " = " + (valor2 * valor3));
+            Console.WriteLine("A multi de " + valor2 + " com " + valor4 + " = " + (valor2 * valor4));
+            Console.WriteLine("A multi de " + valor3 + " com " + valor4 + " = " + (valor3 * valor4));
         }
 
         static void ex5()
@@ -83,92 +79,92 @@ namespace tutorialcsharp
             double velocidade = double.Parse(Console.ReadLine());
 
             double distancia = tempo * velocidade;
-            double litrosUsados = distancia / 12;
+            double litros = distancia / 12;
 
-            Console.WriteLine("A velocidade média é: " + velocidade + "km/h");
-            Console.WriteLine("O tempo gasto na viagem é: " + tempo + "h");
-            Console.WriteLine("A distância percorrida é: " + distancia + "km");
-            Console.WriteLine("A quantidade de litros utilizada na viagem é: " + litrosUsados + "L");
+            Console.WriteLine("A velocidade média é: " + velocidade);
+            Console.WriteLine("O tempo gasto na viagem é: " + tempo);
+            Console.WriteLine("A distância percorrida é: " + distancia);
+            Console.WriteLine("A quantidade de litros é: " + litros);
         }
 
         static void ex6()
         {
-            Console.WriteLine("\nDigite a temperatura em graus Celsius: ");
-            double celsius = double.Parse(Console.ReadLine());
+            Console.WriteLine("\nDigite a temperatura em °C: ");
+            double c = double.Parse(Console.ReadLine());
 
-            double fahrenheit = (9 * celsius + 160) / 5;
+            double fr = (9 * c + 160) / 5;
 
-            Console.WriteLine("A temperatura em graus Fahrenheit é: " + fahrenheit + "°F");
+            Console.WriteLine("A temperatura em graus Fahrenheit é: " + fr + "°F");
         }
 
         static void ex7()
         {
-            Console.WriteLine("\nDigite a temperatura em graus Fahrenheit: ");
-            double fahrenheit = double.Parse(Console.ReadLine());
+            Console.WriteLine("\nDigite a temperatura em graus fr: ");
+            double fr = double.Parse(Console.ReadLine());
 
-            double celsius = (fahrenheit - 32) * 5 / 9;
+            double c = (fr - 32) * 5 / 9;
 
-            Console.WriteLine("A temperatura em graus Celsius é: " + celsius + "°C");
+            Console.WriteLine("A temperatura em graus celsius é: " + c + "°C");
         }
 
         static void ex8()
         {
-            Console.WriteLine("\nDigite o raio da lata de óleo: ");
-            double raio = double.Parse(Console.ReadLine());
+            Console.WriteLine("\nDigite o raio da lata de oleo: ");
+            double r = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite a altura da lata de óleo: ");
-            double altura = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a altura da lata de oleo: ");
+            double h = double.Parse(Console.ReadLine());
 
-            double volume = 3.14159 * raio * raio * altura;
+            double v = 3.14159 * r * r * h;
 
-            Console.WriteLine("O volume da lata de óleo é: " + volume);
+            Console.WriteLine("O volume da lata de oleo é: " + v);
         }
 
         static void ex9()
         {
             Console.WriteLine("\nDigite a idade em anos: ");
-            int anos = int.Parse(Console.ReadLine());
+            int a = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a idade em meses: ");
-            int meses = int.Parse(Console.ReadLine());
+            int m = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a idade em dias: ");
-            int dias = int.Parse(Console.ReadLine());
+            int d = int.Parse(Console.ReadLine());
 
-            int idadeDias = anos * 365 + meses * 30 + dias;
+            int id = a * 365 + m * 30 + d;
 
-            Console.WriteLine("A idade em dias é: " + idadeDias);
+            Console.WriteLine("A idade em dias é: " + id);
         }
 
         static void ex10()
         {
             Console.WriteLine("\nDigite o primeiro número: ");
-            int numero1 = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o segundo número: ");
-            int numero2 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
-            if (numero1 == numero2)
+            if (n1 == n2)
             {
                 Console.WriteLine("Os números são iguais");
             }
-            else if (numero1 != numero2)
+            else if (n1 != n2)
             {
                 Console.WriteLine("Os números são diferentes");
             }
-            else if (numero1 > numero2)
+            else if (n1 > n2)
             {
                 Console.WriteLine("O primeiro número é maior que o segundo");
             }
-            else if (numero1 < numero2)
+            else if (n1 < n2)
             {
                 Console.WriteLine("O primeiro número é menor que o segundo");
             }
-            else if (numero1 >= numero2)
+            else if (n1 >= n2)
             {
                 Console.WriteLine("O primeiro número é maior ou igual ao segundo");
             }
-            else if (numero1 <= numero2)
+            else if (n1 <= n2)
             {
                 Console.WriteLine("O primeiro número é menor ou igual ao segundo");
             }
@@ -177,74 +173,74 @@ namespace tutorialcsharp
         static void ex11()
         {
             Console.WriteLine("\nDigite o primeiro número: ");
-            int numero1 = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o segundo número: ");
-            int numero2 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
-            (numero1, numero2) = (numero2, numero1);
+            (n1, n2) = (n2, n1);
 
-            Console.WriteLine("O primeiro número é: " + numero1);
-            Console.WriteLine("O segundo número é: " + numero2);
+            Console.WriteLine("O primeiro número é: " + n1);
+            Console.WriteLine("O segundo número é: " + n2);
         }
 
         static void ex12()
         {
             Console.WriteLine("\nDigite um número: ");
-            int numero = int.Parse(Console.ReadLine());
+            int num = int.Parse(Console.ReadLine());
 
-            if (numero >= 0)
+            if (num >= 0)
             {
-                Console.WriteLine("O módulo do número é: " + numero);
+                Console.WriteLine("O módulo do número é: " + num);
             }
             else
             {
-                Console.WriteLine("O módulo do número é: " + numero * (-1));
+                Console.WriteLine("O módulo do número é: " + num * (-1));
             }
         }
 
         static void ex13()
         {
             Console.WriteLine("\nDigite o primeiro número: ");
-            int numero1 = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o segundo número: ");
-            int numero2 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o terceiro número: ");
-            int numero3 = int.Parse(Console.ReadLine());
+            int n3 = int.Parse(Console.ReadLine());
 
-            if (numero1 > numero2 && numero1 > numero3)
+            if (n1 > n2 && n1 > n3)
             {
-                if (numero2 > numero3)
+                if (n2 > n3)
                 {
-                    Console.WriteLine("A ordem decrescente é: " + numero1 + ", " + numero2 + ", " + numero3);
+                    Console.WriteLine("A ordem decrescente é: " + n1 + " " + n2 + " " + n3);
                 }
                 else
                 {
-                    Console.WriteLine("A ordem decrescente é: " + numero1 + ", " + numero3 + ", " + numero2);
+                    Console.WriteLine("A ordem decrescente é: " + n1 + " " + n3 + " " + n2);
                 }
             }
-            else if (numero2 > numero1 && numero2 > numero3)
+            else if (n2 > n1 && n2 > n3)
             {
-                if (numero1 > numero3)
+                if (n1 > n3)
                 {
-                    Console.WriteLine("A ordem decrescente é: " + numero2 + ", " + numero1 + ", " + numero3);
+                    Console.WriteLine("A ordem decrescente é: " + n2 + " " + n1 + " " + n3);
                 }
                 else
                 {
-                    Console.WriteLine("A ordem decrescente é: " + numero2 + ", " + numero3 + ", " + numero1);
+                    Console.WriteLine("A ordem decrescente é: " + n2 + " " + n3 + " " + n1);
                 }
             }
-            else if (numero3 > numero1 && numero3 > numero2)
+            else if (n3 > n1 && n3 > n2)
             {
-                if (numero1 > numero2)
+                if (n1 > n2)
                 {
-                    Console.WriteLine("A ordem decrescente é: " + numero3 + ", " + numero1 + ", " + numero2);
+                    Console.WriteLine("A ordem decrescente é: " + n3 + " " + n1 + " " + n2);
                 }
                 else
                 {
-                    Console.WriteLine("A ordem decrescente é: " + numero3 + ", " + numero2 + ", " + numero1);
+                    Console.WriteLine("A ordem decrescente é: " + n3 + " " + n2 + " " + n1);
                 }
             }
         }
@@ -252,55 +248,55 @@ namespace tutorialcsharp
         static void ex14()
         {
             Console.WriteLine("\nDigite o primeiro número: ");
-            int numero1 = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o segundo número: ");
-            int numero2 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
-            if (numero1 > numero2)
+            if (n1 > n2)
             {
-                Console.WriteLine("A diferença do maior para o menor é: " + (numero1 - numero2));
+                Console.WriteLine("A diferença do maior para o menor é: " + (n1 - n2));
             }
             else
             {
-                Console.WriteLine("A diferença do maior para o menor é: " + (numero2 - numero1));
+                Console.WriteLine("A diferença do maior para o menor é: " + (n2 - n1));
             }
         }
 
         static void ex15()
         {
             Console.WriteLine("\nDigite a primeira nota: ");
-            double nota1 = double.Parse(Console.ReadLine());
+            double n1 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a segunda nota: ");
-            double nota2 = double.Parse(Console.ReadLine());
+            double n2 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a terceira nota: ");
-            double nota3 = double.Parse(Console.ReadLine());
+            double n3 = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite a quarta nota: ");
-            double nota4 = double.Parse(Console.ReadLine());
+            double n4 = double.Parse(Console.ReadLine());
 
-            double media = (nota1 + nota2 + nota3 + nota4) / 4;
+            double med = (n1 + n2 + n3 + n4) / 4;
 
-            if (media >= 7)
+            if (med >= 7)
             {
-                Console.WriteLine("O aluno foi aprovado com média: " + media);
+                Console.WriteLine("O aluno foi aprovado com média: " + med);
             }
             else
             {
                 Console.WriteLine("Digite a nota da recuperação: ");
-                double notaRecuperacao = double.Parse(Console.ReadLine());
+                double nRecup = double.Parse(Console.ReadLine());
 
-                double novaMedia = (media + notaRecuperacao) / 2;
+                double novamed = (med + nRecup) / 2;
 
-                if (novaMedia >= 7)
+                if (novamed >= 7)
                 {
-                    Console.WriteLine("O aluno foi aprovado na recuperação com média: " + novaMedia);
+                    Console.WriteLine("O aluno foi aprovado na recuperação com média: " + novamed);
                 }
                 else
                 {
-                    Console.WriteLine("O aluno foi reprovado com média: " + novaMedia);
+                    Console.WriteLine("O aluno foi reprovado com média: " + novamed);
                 }
             }
         }
@@ -308,20 +304,20 @@ namespace tutorialcsharp
         static void ex16()
         {
             Console.WriteLine("\nDigite o primeiro número: ");
-            int numero1 = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o segundo número: ");
-            int numero2 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
-            if (numero1 > numero2)
+            if (n1 > n2)
             {
-                Console.WriteLine("O maior número é: " + numero1);
-                Console.WriteLine("O menor número é: " + numero2);
+                Console.WriteLine("O maior número é: " + n1);
+                Console.WriteLine("O menor número é: " + n2);
             }
-            else if (numero2 > numero1)
+            else if (n2 > n1)
             {
-                Console.WriteLine("O maior número é: " + numero2);
-                Console.WriteLine("O menor número é: " + numero1);
+                Console.WriteLine("O maior número é: " + n2);
+                Console.WriteLine("O menor número é: " + n1);
             }
             else
             {
@@ -332,9 +328,9 @@ namespace tutorialcsharp
         static void ex17()
         {
             Console.WriteLine("\nDigite um número inteiro: ");
-            int numero = int.Parse(Console.ReadLine());
+            int num = int.Parse(Console.ReadLine());
 
-            if (numero >= 0 && numero <= 9)
+            if (num >= 0 && num <= 9)
             {
                 Console.WriteLine("Valor válido.");
             }
@@ -347,9 +343,9 @@ namespace tutorialcsharp
         static void ex18()
         {
             Console.WriteLine("\nDigite um número inteiro: ");
-            int codigo = int.Parse(Console.ReadLine());
+            int cod = int.Parse(Console.ReadLine());
 
-            switch (codigo)
+            switch (cod)
             {
                 case 1:
                     Console.WriteLine("Um");
@@ -450,9 +446,9 @@ namespace tutorialcsharp
             while (resposta == "s" || resposta == "S")
             {
                 Console.WriteLine("\nDigite um número inteiro: ");
-                int numero = int.Parse(Console.ReadLine());
+                int num = int.Parse(Console.ReadLine());
 
-                if (numero >= 0)
+                if (num >= 0)
                 {
                     Console.WriteLine("Número positivo.");
                 }
@@ -469,9 +465,9 @@ namespace tutorialcsharp
         static void ex22()
         {
             Console.WriteLine("\nDigite um número inteiro: ");
-            int numero = int.Parse(Console.ReadLine());
+            int num = int.Parse(Console.ReadLine());
 
-            if (numero >= 0)
+            if (num >= 0)
             {
                 Console.WriteLine("Número positivo.");
             }
@@ -484,10 +480,10 @@ namespace tutorialcsharp
         static void ex23()
         {
             Console.WriteLine("\nDigite o primeiro número inteiro: ");
-            int numero1 = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o segundo número inteiro: ");
-            int numero2 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("\nDigite a opção desejada: ");
             Console.WriteLine("1 – Adição" +
@@ -505,16 +501,16 @@ namespace tutorialcsharp
             switch (opcao)
             {
                 case 1:
-                    Console.WriteLine("A soma dos números é: " + (numero1 + numero2));
+                    Console.WriteLine("A sm dos números é: " + (n1 + n2));
                     break;
                 case 2:
-                    Console.WriteLine("A subtração dos números é: " + (numero1 - numero2));
+                    Console.WriteLine("A subtração dos números é: " + (n1 - n2));
                     break;
                 case 3:
-                    Console.WriteLine("A multiplicação dos números é: " + (numero1 * numero2));
+                    Console.WriteLine("A multiplicação dos números é: " + (n1 * n2));
                     break;
                 case 4:
-                    Console.WriteLine("A divisão dos números é: " + (numero1 / numero2));
+                    Console.WriteLine("A divisão dos números é: " + (n1 / n2));
                     break;
             }
         }
@@ -584,22 +580,22 @@ namespace tutorialcsharp
             Console.WriteLine("\nDigite a altura da pessoa: ");
             double altura = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o sexo da pessoa (M/F): ");
+            Console.WriteLine("Digite o sexo da pessoa: ");
             string sexo = Console.ReadLine();
 
-            while (sexo != "M" || sexo != "m" || sexo != "F" || sexo != "f")
+            while (sexo != "m" || sexo != "f" || sexo != "F" || sexo != "M")
             {
-                Console.WriteLine("Sexo inválido. Digite novamente:");
+                Console.WriteLine("Sexo inválido");
                 sexo = Console.ReadLine();
             }
 
             if (sexo == "M" || sexo == "m")
             {
-                Console.WriteLine("O peso ideal é: " + ((72.7 * altura) - 58));
+                Console.WriteLine("O peso ideal é: " + (72.7 * altura - 58));
             }
             else
             {
-                Console.WriteLine("O peso ideal é: " + ((62.1 * altura) - 44.7));
+                Console.WriteLine("O peso ideal é: " + (62.1 * altura - 44.7));
             }
         }
 
@@ -614,20 +610,20 @@ namespace tutorialcsharp
         static void ex27()
         {
             Console.WriteLine("\nDigite a quantidade de números que deverá processar: ");
-            int quantidade = int.Parse(Console.ReadLine());
+            int qtd = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < quantidade; i++)
+            for (int i = 0; i < qtd; i++)
             {
                 Console.WriteLine("Digite o número que deverá processar: ");
-                int numero = int.Parse(Console.ReadLine());
+                int num = int.Parse(Console.ReadLine());
 
-                int fatorial = 1;
-                for (int j = 1; j <= numero; j++)
+                int ft = 1;
+                for (int j = 1; j <= num; j++)
                 {
-                    fatorial *= j;
+                    ft *= j;
                 }
 
-                Console.WriteLine("O fatorial do número " + numero + " é: " + fatorial);
+                Console.WriteLine("O ft do número " + num + " é: " + ft);
             }
         }
 
@@ -653,68 +649,68 @@ namespace tutorialcsharp
         static void ex30()
         {
             Console.WriteLine("\nDigite o número que deseja ver a tabuada: ");
-            int numero = int.Parse(Console.ReadLine());
+            int num = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine(numero + " x " + i + " = " + (numero * i));
+                Console.WriteLine(num + " x " + i + " = " + (num * i));
             }
         }
 
         static void ex31()
         {
-            int numero = 0;
-            int somaPares = 0;
-            int somaImpares = 0;
+            int num = 0;
+            int smPares = 0;
+            int smImpares = 0;
 
-            while (numero >= 0)
+            while (num >= 0)
             {
                 Console.WriteLine("Digite um número inteiro (digite um negativo para parar): ");
-                numero = int.Parse(Console.ReadLine());
+                num = int.Parse(Console.ReadLine());
 
-                if (numero >= 0)
+                if (num >= 0)
                 {
-                    if (numero % 2 == 0)
+                    if (num % 2 == 0)
                     {
-                        somaPares += numero;
+                        smPares += num;
                     }
                     else
                     {
-                        somaImpares += numero;
+                        smImpares += num;
                     }
                 }
             }
 
-            Console.WriteLine("A soma dos números pares é: " + somaPares);
-            Console.WriteLine("A soma dos números ímpares é: " + somaImpares);
+            Console.WriteLine("A sm dos números pares é: " + smPares);
+            Console.WriteLine("A sm dos números ímpares é: " + smImpares);
         }
 
         static void ex32()
         {
             Console.WriteLine("\nDigite um número inteiro entre 0 e 10: ");
-            int numero = int.Parse(Console.ReadLine());
+            int num = int.Parse(Console.ReadLine());
 
-            while (numero <= 0 || numero >= 10)
+            while (num <= 0 || num >= 10)
             {
                 Console.WriteLine("Número inválido. Digite novamente: ");
-                numero = int.Parse(Console.ReadLine());
+                num = int.Parse(Console.ReadLine());
             }
 
-            int soma = 0;
+            int sm = 0;
             for (int i = 1; i <= 20; i++)
             {
-                soma += (numero * numero);
-                numero += 2;
+                sm += (num * num);
+                num += 2;
             }
 
-            Console.WriteLine("A soma dos quadrados dos 20 primeiros números ímpares a partir do número digitado é: " +
-                              soma);
+            Console.WriteLine("A sm dos quadrados dos 20 primeiros números ímpares a partir do número digitado é: " +
+                              sm);
         }
 
         static void ex33()
         {
             int matricula, cont = 0;
-            double nota, media = 0;
+            double nota, med = 0;
 
             Console.WriteLine("Digite a matricula do aluno: ");
             matricula = int.Parse(Console.ReadLine());
@@ -723,21 +719,21 @@ namespace tutorialcsharp
             {
                 Console.WriteLine("Digite a nota do aluno: ");
                 nota = double.Parse(Console.ReadLine());
-                media += nota;
+                med += nota;
                 cont++;
                 Console.WriteLine("Digite a matricula do aluno: ");
                 matricula = int.Parse(Console.ReadLine());
             }
 
-            media = media / cont;
-            Console.WriteLine("A media da turma é: " + media);
+            med = med / cont;
+            Console.WriteLine("A med da turma é: " + med);
         }
 
         static void ex34()
         {
             int num, menor = 0, maior = 0;
 
-            Console.WriteLine("Digite um numero: ");
+            Console.WriteLine("Digite um num: ");
             num = int.Parse(Console.ReadLine());
 
             while (num >= 0)
@@ -751,12 +747,12 @@ namespace tutorialcsharp
                     maior = num;
                 }
 
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 num = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine("O menor numero é: " + menor);
-            Console.WriteLine("O maior numero é: " + maior);
+            Console.WriteLine("O menor num é: " + menor);
+            Console.WriteLine("O maior num é: " + maior);
         }
 
         static void ex35()
@@ -776,11 +772,11 @@ namespace tutorialcsharp
 
         static void ex36()
         {
-            int num, maior = 0, menor = 0, media = 0;
+            int num, maior = 0, menor = 0, med = 0;
 
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 num = int.Parse(Console.ReadLine());
 
                 if (num > maior)
@@ -792,13 +788,13 @@ namespace tutorialcsharp
                     menor = num;
                 }
 
-                media += num;
+                med += num;
             }
 
-            media = media / 10;
-            Console.WriteLine("O maior numero é: " + maior);
-            Console.WriteLine("O menor numero é: " + menor);
-            Console.WriteLine("A media dos numeros é: " + media);
+            med = med / 10;
+            Console.WriteLine("O maior num é: " + maior);
+            Console.WriteLine("O menor num é: " + menor);
+            Console.WriteLine("A med dos nums é: " + med);
         }
 
         static void ex37()
@@ -815,16 +811,16 @@ namespace tutorialcsharp
                 Console.WriteLine("Informe a opção: ");
                 opcao = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("Digite o primeiro numero: ");
+                Console.WriteLine("Digite o primeiro num: ");
                 num1 = int.Parse(Console.ReadLine());
-                Console.WriteLine("Digite o segundo numero: ");
+                Console.WriteLine("Digite o segundo num: ");
                 num2 = int.Parse(Console.ReadLine());
 
                 switch (opcao)
                 {
                     case 1:
                         resultado = num1 + num2;
-                        Console.WriteLine("O resultado da soma é: " + resultado);
+                        Console.WriteLine("O resultado da sm é: " + resultado);
                         break;
                     case 2:
                         resultado = num1 - num2;
@@ -850,29 +846,29 @@ namespace tutorialcsharp
 
         static void ex38()
         {
-            int codigo, horasTrabalhadas, salario, salarioExcedente;
+            int cod, hrsTrab, salario, salarioEx;
             char resposta;
 
             do
             {
                 Console.WriteLine("Digite o codigo do operario: ");
-                codigo = int.Parse(Console.ReadLine());
-                Console.WriteLine("Digite o numero de horas trabalhadas: ");
-                horasTrabalhadas = int.Parse(Console.ReadLine());
+                cod = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite o num de horas trabalhadas: ");
+                hrsTrab = int.Parse(Console.ReadLine());
 
-                if (horasTrabalhadas > 50)
+                if (hrsTrab > 50)
                 {
-                    salario = horasTrabalhadas * 10;
-                    salarioExcedente = (horasTrabalhadas - 50) * 20;
+                    salario = hrsTrab * 10;
+                    salarioEx = (hrsTrab - 50) * 20;
                 }
                 else
                 {
-                    salario = horasTrabalhadas * 10;
-                    salarioExcedente = 0;
+                    salario = hrsTrab * 10;
+                    salarioEx = 0;
                 }
 
                 Console.WriteLine("O salario total é: " + salario);
-                Console.WriteLine("O salario excedente é: " + salarioExcedente);
+                Console.WriteLine("O salario excedente é: " + salarioEx);
                 Console.WriteLine("Deseja encerrar o programa? (S/N)");
                 resposta = char.Parse(Console.ReadLine());
             } while (resposta == 'N' || resposta == 'n');
@@ -885,25 +881,25 @@ namespace tutorialcsharp
 
             do
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 num = int.Parse(Console.ReadLine());
 
                 if (num % 2 == 0)
                 {
-                    Console.WriteLine("O numero é par");
+                    Console.WriteLine("O num é par");
                 }
                 else
                 {
-                    Console.WriteLine("O numero é impar");
+                    Console.WriteLine("O num é impar");
                 }
 
                 if (num > 0)
                 {
-                    Console.WriteLine("O numero é positivo");
+                    Console.WriteLine("O num é positivo");
                 }
                 else
                 {
-                    Console.WriteLine("O numero é negativo");
+                    Console.WriteLine("O num é negativo");
                 }
 
                 Console.WriteLine("Deseja encerrar o programa? (S/N)");
@@ -986,7 +982,7 @@ namespace tutorialcsharp
 
             do
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 num = int.Parse(Console.ReadLine());
 
                 if (num > maior)
@@ -1002,17 +998,17 @@ namespace tutorialcsharp
                 resposta = char.Parse(Console.ReadLine());
             } while (resposta == 'N' || resposta == 'n');
 
-            Console.WriteLine("O maior numero é: " + maior);
-            Console.WriteLine("O menor numero é: " + menor);
+            Console.WriteLine("O maior num é: " + maior);
+            Console.WriteLine("O menor num é: " + menor);
         }
 
         static void ex43()
         {
-            int numeroQuadros = 64; // Número total de quadros no tabuleiro de xadrez
+            int numQuadros = 64; // Número total de quadros no tabuleiro de xadrez
             ulong graos = 1;
             ulong graosTotais = 1;
 
-            for (int quadro = 2; quadro <= numeroQuadros; quadro++)
+            for (int quadro = 2; quadro <= numQuadros; quadro++)
             {
                 graos *= 2;
                 graosTotais += graos;
@@ -1077,7 +1073,7 @@ namespace tutorialcsharp
 
             for (int i = 0; i < vetor.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetor[i] = int.Parse(Console.ReadLine());
             }
         }
@@ -1090,13 +1086,13 @@ namespace tutorialcsharp
 
             for (int i = 0; i < vetorX.Length; i++)
             {
-                Console.WriteLine("Digite um numero para o vetor X: ");
+                Console.WriteLine("Digite um num para o vetor X: ");
                 vetorX[i] = int.Parse(Console.ReadLine());
             }
 
             for (int i = 0; i < vetorY.Length; i++)
             {
-                Console.WriteLine("Digite um numero para o vetor Y: ");
+                Console.WriteLine("Digite um num para o vetor Y: ");
                 vetorY[i] = int.Parse(Console.ReadLine());
             }
 
@@ -1111,24 +1107,24 @@ namespace tutorialcsharp
         static void ex47()
         {
             int[] vetor = new int[10];
-            int numeroX, maior = 0, menor = 0, igual = 0;
+            int numX, maior = 0, menor = 0, igual = 0;
 
             for (int i = 0; i < vetor.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetor[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine("Digite um numero X: ");
-            numeroX = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um num X: ");
+            numX = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < vetor.Length; i++)
             {
-                if (vetor[i] > numeroX)
+                if (vetor[i] > numX)
                 {
                     maior++;
                 }
-                else if (vetor[i] < numeroX)
+                else if (vetor[i] < numX)
                 {
                     menor++;
                 }
@@ -1138,7 +1134,7 @@ namespace tutorialcsharp
                 }
             }
 
-            Console.WriteLine("Quantidade de numeros maiores que X: " + maior);
+            Console.WriteLine("qtd de nums maiores que X: " + maior);
         }
 
         static void ex48()
@@ -1171,13 +1167,13 @@ namespace tutorialcsharp
 
             for (int i = 0; i < vetor1.Length; i++)
             {
-                Console.WriteLine("Digite um numero para o vetor 1: ");
+                Console.WriteLine("Digite um num para o vetor 1: ");
                 vetor1[i] = int.Parse(Console.ReadLine());
             }
 
             for (int i = 0; i < vetor2.Length; i++)
             {
-                Console.WriteLine("Digite um numero para o vetor 2: ");
+                Console.WriteLine("Digite um num para o vetor 2: ");
                 vetor2[i] = int.Parse(Console.ReadLine());
             }
 
@@ -1195,26 +1191,26 @@ namespace tutorialcsharp
         static void ex50()
         {
             Random random = new Random();
-            int numeroSorteado = random.Next(0, 100);
-            int numeroTentativa, contador = 0;
+            int numSorteado = random.Next(0, 100);
+            int numTentativa, contador = 0;
 
             do
             {
-                Console.WriteLine("Digite um numero: ");
-                numeroTentativa = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite um num: ");
+                numTentativa = int.Parse(Console.ReadLine());
                 contador++;
 
-                if (numeroTentativa > numeroSorteado)
+                if (numTentativa > numSorteado)
                 {
-                    Console.WriteLine("O numero sorteado é menor");
+                    Console.WriteLine("O num sorteado é menor");
                 }
-                else if (numeroTentativa < numeroSorteado)
+                else if (numTentativa < numSorteado)
                 {
-                    Console.WriteLine("O numero sorteado é maior");
+                    Console.WriteLine("O num sorteado é maior");
                 }
-            } while (numeroTentativa != numeroSorteado);
+            } while (numTentativa != numSorteado);
 
-            Console.WriteLine("Quantidade de tentativas: " + contador);
+            Console.WriteLine("qtd de tentativas: " + contador);
             if (contador < 5)
             {
                 Console.WriteLine("Tu é pit.");
@@ -1223,17 +1219,17 @@ namespace tutorialcsharp
 
         static void pinga()
         {
-            int quantidadeAlunos, contador = 0;
-            double nota, media, soma = 0;
+            int qtdAlunos, contador = 0;
+            double nota, med, sm = 0;
 
-            Console.WriteLine("Digite a quantidade de alunos: ");
-            quantidadeAlunos = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a qtd de alunos: ");
+            qtdAlunos = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < quantidadeAlunos; i++)
+            for (int i = 0; i < qtdAlunos; i++)
             {
                 Console.WriteLine("Digite a nota do aluno: ");
                 nota = double.Parse(Console.ReadLine());
-                soma += nota;
+                sm += nota;
 
                 if (nota > 7)
                 {
@@ -1241,7 +1237,7 @@ namespace tutorialcsharp
                 }
             }
 
-            media = soma / quantidadeAlunos;
+            med = sm / qtdAlunos;
 
             if (contador == 0)
             {
@@ -1249,10 +1245,10 @@ namespace tutorialcsharp
             }
             else
             {
-                Console.WriteLine("Quantidade de alunos com nota acima de 7: " + contador);
+                Console.WriteLine("qtd de alunos com nota acima de 7: " + contador);
             }
 
-            Console.WriteLine("Media das notas: " + media);
+            Console.WriteLine("med das notas: " + med);
         }
 
         static void ex52()
@@ -1262,7 +1258,7 @@ namespace tutorialcsharp
 
             for (int i = 0; i < vetor.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetor[i] = int.Parse(Console.ReadLine());
 
                 if (vetor[i] == 1)
@@ -1284,20 +1280,20 @@ namespace tutorialcsharp
                 }
             }
 
-            Console.WriteLine("Quantidade de 1: " + contador1);
-            Console.WriteLine("Quantidade de 3: " + contador3);
-            Console.WriteLine("Quantidade de 4: " + contador4);
+            Console.WriteLine("qtd de 1: " + contador1);
+            Console.WriteLine("qtd de 3: " + contador3);
+            Console.WriteLine("qtd de 4: " + contador4);
         }
 
         static void ex53()
         {
-            int quantidadeVoltas, melhorTempo = 0, voltaMelhorTempo = 0;
-            double tempoMedio, soma = 0;
+            int qtdVoltas, melhorTempo = 0, voltaMelhorTempo = 0;
+            double tempoMedio, sm = 0;
 
-            Console.WriteLine("Digite a quantidade de voltas: ");
-            quantidadeVoltas = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a qtd de voltas: ");
+            qtdVoltas = int.Parse(Console.ReadLine());
 
-            int[] vetor = new int[quantidadeVoltas];
+            int[] vetor = new int[qtdVoltas];
 
             for (int i = 0; i < vetor.Length; i++)
             {
@@ -1315,10 +1311,10 @@ namespace tutorialcsharp
                     voltaMelhorTempo = i + 1;
                 }
 
-                soma += vetor[i];
+                sm += vetor[i];
             }
 
-            tempoMedio = soma / quantidadeVoltas;
+            tempoMedio = sm / qtdVoltas;
 
             Console.WriteLine("Melhor tempo: " + melhorTempo);
             Console.WriteLine("Volta do melhor tempo: " + voltaMelhorTempo);
@@ -1332,13 +1328,13 @@ namespace tutorialcsharp
 
             for (int i = 0; i < vetorA.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetorA[i] = int.Parse(Console.ReadLine());
             }
 
             for (int i = 0; i < vetorB.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetorB[i] = int.Parse(Console.ReadLine());
             }
 
@@ -1348,7 +1344,7 @@ namespace tutorialcsharp
                 {
                     if (vetorA[i] == vetorB[j])
                     {
-                        Console.WriteLine("Numero comum: " + vetorA[i]);
+                        Console.WriteLine("num comum: " + vetorA[i]);
                     }
                 }
             }
@@ -1371,7 +1367,7 @@ namespace tutorialcsharp
             }
 
             Console.WriteLine("Frase sem espacos: " + frase.Replace(" ", ""));
-            Console.WriteLine("Quantidade de espacos: " + contador);
+            Console.WriteLine("qtd de espacos: " + contador);
         }
 
         static void ex56()
@@ -1381,7 +1377,7 @@ namespace tutorialcsharp
 
             for (int i = 0; i < vetor.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetor[i] = int.Parse(Console.ReadLine());
 
                 if (vetor[i] % 2 == 0)
@@ -1395,8 +1391,8 @@ namespace tutorialcsharp
                 }
             }
 
-            Console.WriteLine("Quantidade de numeros pares: " + contadorPar);
-            Console.WriteLine("Quantidade de multiplos de 5: " + contadorMultiplo5);
+            Console.WriteLine("qtd de nums pares: " + contadorPar);
+            Console.WriteLine("qtd de multiplos de 5: " + contadorMultiplo5);
         }
 
         static void ex57()
@@ -1417,17 +1413,17 @@ namespace tutorialcsharp
 
         static void ex58()
         {
-            int quantidadeNumeros, maior = 0, soma = 0;
-            double media;
+            int qtdnums, maior = 0, sm = 0;
+            double med;
 
-            Console.WriteLine("Digite a quantidade de numeros: ");
-            quantidadeNumeros = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a qtd de nums: ");
+            qtdnums = int.Parse(Console.ReadLine());
 
-            int[] vetor = new int[quantidadeNumeros];
+            int[] vetor = new int[qtdnums];
 
             for (int i = 0; i < vetor.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetor[i] = int.Parse(Console.ReadLine());
 
                 if (i == 0)
@@ -1439,13 +1435,13 @@ namespace tutorialcsharp
                     maior = vetor[i];
                 }
 
-                soma += vetor[i];
+                sm += vetor[i];
             }
 
-            media = soma / quantidadeNumeros;
+            med = sm / qtdnums;
 
-            Console.WriteLine("Maior numero: " + maior);
-            Console.WriteLine("Media: " + media);
+            Console.WriteLine("Maior num: " + maior);
+            Console.WriteLine("med: " + med);
         }
 
         static void ex59()
@@ -1466,7 +1462,7 @@ namespace tutorialcsharp
                     contador++;
                 }
 
-                Console.WriteLine("Numero de caracteres entre eles: " + contador);
+                Console.WriteLine("num de caracteres entre eles: " + contador);
             }
             else
             {
@@ -1557,17 +1553,17 @@ namespace tutorialcsharp
 
         static void ex63()
         {
-            int numero;
+            int num;
 
-            Console.WriteLine("Digite um numero: ");
-            numero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite um num: ");
+            num = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(verifica(numero));
+            Console.WriteLine(verifica(num));
         }
 
-        static string verifica(int numero)
+        static string verifica(int num)
         {
-            if (numero % 2 == 0)
+            if (num % 2 == 0)
             {
                 return "PAR";
             }
@@ -1579,12 +1575,12 @@ namespace tutorialcsharp
 
         static void ex64()
         {
-            int opcao, quantidadeNumeros;
+            int opcao, qtdnums;
 
-            Console.WriteLine("Digite a quantidade de numeros: ");
-            quantidadeNumeros = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a qtd de nums: ");
+            qtdnums = int.Parse(Console.ReadLine());
 
-            int[] vetor = new int[quantidadeNumeros];
+            int[] vetor = new int[qtdnums];
 
             do
             {
@@ -1592,8 +1588,8 @@ namespace tutorialcsharp
                 Console.WriteLine("2 - Listar Vetor");
                 Console.WriteLine("3 - Exibir apenas os números pares do vetor");
                 Console.WriteLine("4 - Exibir apenas os números ímpares do vetor");
-                Console.WriteLine("5 - Exibir a quantidade de números pares existem nas posições ímpares do vetor");
-                Console.WriteLine("6 - Exibir a quantidade de números ímpares existem nas posições pares do vetor");
+                Console.WriteLine("5 - Exibir a qtd de números pares existem nas posições ímpares do vetor");
+                Console.WriteLine("6 - Exibir a qtd de números ímpares existem nas posições pares do vetor");
                 Console.WriteLine("7 - Sair");
                 Console.WriteLine("Digite uma opcao: ");
                 opcao = int.Parse(Console.ReadLine());
@@ -1632,7 +1628,7 @@ namespace tutorialcsharp
         {
             for (int i = 0; i < vetor.Length; i++)
             {
-                Console.WriteLine("Digite um numero: ");
+                Console.WriteLine("Digite um num: ");
                 vetor[i] = int.Parse(Console.ReadLine());
             }
         }
@@ -1669,7 +1665,7 @@ namespace tutorialcsharp
 
         static void exibeParesImpares(int[] vetor)
         {
-            int quantidadePares = 0;
+            int qtdPares = 0;
 
             for (int i = 0; i < vetor.Length; i++)
             {
@@ -1677,17 +1673,17 @@ namespace tutorialcsharp
                 {
                     if (vetor[i] % 2 == 0)
                     {
-                        quantidadePares++;
+                        qtdPares++;
                     }
                 }
             }
 
-            Console.WriteLine("Quantidade de pares nas posicoes impares: " + quantidadePares);
+            Console.WriteLine("Quantidade de pares nas posicoes impares: " + qtdPares);
         }
 
         static void exibeImparesPares(int[] vetor)
         {
-            int quantidadeImpares = 0;
+            int qtdImpares = 0;
 
             for (int i = 0; i < vetor.Length; i++)
             {
@@ -1695,12 +1691,12 @@ namespace tutorialcsharp
                 {
                     if (vetor[i] % 2 != 0)
                     {
-                        quantidadeImpares++;
+                        qtdImpares++;
                     }
                 }
             }
 
-            Console.WriteLine("Quantidade de impares nas posicoes pares: " + quantidadeImpares);
+            Console.WriteLine("Quantidade de impares nas posicoes pares: " + qtdImpares);
         }
     }
 }
